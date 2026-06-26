@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #e8dcc8;
+  color: #3d2b1f;
+  line-height: 1.6;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  background-color: #f5ede0;
+  border: 2px solid #3d2b1f;
+  border-radius: 12px;
+  padding: 40px 32px;
+  text-align: center;
+}
+
+.card--wide {
+  max-width: 720px;
+  text-align: left;
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #3d2b1f;
+}
+
+.subtitle {
+  margin: 0 0 32px;
+  font-size: 1rem;
+  color: #5c4033;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 16px 24px;
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #3d2b1f;
+  text-decoration: none;
+  text-align: center;
+  background-color: #f5ede0;
+  border: 2px solid #3d2b1f;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: #e8dcc8;
+  outline: none;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+  color: #5c4033;
+  text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  color: #3d2b1f;
+  text-decoration: underline;
+}
+
+.content h1 {
+  margin: 0 0 8px;
+  font-size: 1.75rem;
+}
+
+.content .updated {
+  margin: 0 0 24px;
+  font-size: 0.9rem;
+  color: #5c4033;
+}
+
+.content h2 {
+  margin: 28px 0 12px;
+  font-size: 1.15rem;
+}
+
+.content h3 {
+  margin: 20px 0 8px;
+  font-size: 1.05rem;
+}
+
+.content p,
+.content li {
+  font-size: 0.98rem;
+}
+
+.content ul {
+  margin: 0 0 16px;
+  padding-left: 1.4rem;
+}
+
+.content a {
+  color: #3d2b1f;
+}
+
+.content a:hover {
+  color: #5c4033;
+}
+
+.support-email {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 32px 20px;
+  }
+
+  .title {
+    font-size: 1.85rem;
+  }
+}
